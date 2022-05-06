@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,19 @@
   "bugs": {
     "url": "https://github.com/yashchenkov/AdvancedJS7/issues"
   },
-  "homepage": "https://github.com/yashchenkov/AdvancedJS7#readme"
+  "homepage": "https://github.com/yashchenkov/AdvancedJS7#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-jest": "^28.1.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.14.0",
+    "jest": "^28.1.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "core-js": "^3.22.4"
+  }
 }
