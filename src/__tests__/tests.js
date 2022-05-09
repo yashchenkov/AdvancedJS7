@@ -64,7 +64,7 @@ test('testing any restricted character', () => {
 });
 
 test('testing correct name', () => { 
-  const name = 'Vladimir';
+  const name = 'Vl-23adimir';
   const validator = new Validator();
   
   expect(validator.validateUsername(name)).toEqual(true);
